@@ -12,7 +12,7 @@ struct Student {
 
 int main()
 {
-   //declare an array of structures
+//declare an array of structures
   const int size = 3;
   struct Student stu[size];
 
@@ -29,8 +29,9 @@ stu[2].grade = 75;
 stu[2].id = 1003;
 stu[2].name = "Greg";
 
+//Display the values stored in the array
 for(int i = 0; i < size; i++) {
-    cout << stu[i].id<<"  "<< stu[i].name <<" " << stu[i].grade <<endl;
+    cout <<"Student id: "<< stu[i].id<<"  "<<"Student name: "<< stu[i].name <<"  " << " Student grade: "<<stu[i].grade <<endl;
 }
  return 0;
 }
