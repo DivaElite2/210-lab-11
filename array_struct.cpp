@@ -7,13 +7,17 @@ using namespace std;
 struct Student {
     int grades;
     int id;
-    int name;
+    string name;
 };
 
 int main()
 {
    //declare an array of structures
-   int size = 3;
-   Student stu[size];
+  const int size = 3;
+  struct Student stu[size];
+
+//Assign values to elements in array
+stu[0].grades = 95;
+stu[0].id = 1001;
 }
 
